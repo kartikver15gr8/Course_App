@@ -1,0 +1,15 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  border: 2px solid gray;
+  border-radius: 10px;
+  justify-content: space-between;
+  padding-left: 10px;
+}
+
+.btn {
+  margin: 10px;
+}
+.btn Button {
+  margin-left: 10px;
+}

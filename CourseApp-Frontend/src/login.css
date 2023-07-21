@@ -1,0 +1,31 @@
+/* .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: auto;
+  border: 2px solid bla;
+  margin-top: 20px;
+} */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(31, 7, 7);
+  border-radius: 10px;
+  padding: 20px;
+  width: 50%;
+  margin-top: 20px;
+}
+
+.container h2 {
+  color: darkblue;
+}
+
+Button {
+  width: 50px;
+  justify-content: center;
+}
