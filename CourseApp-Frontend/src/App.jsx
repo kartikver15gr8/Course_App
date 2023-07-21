@@ -6,6 +6,7 @@ import "./App.css";
 import Navbar from "./Navbar";
 import Signup from "./Signup";
 import Login from "./Login";
+import AddCourse from "./AddCourse";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/signup" element={<Signup />}></Route>
           <Route path="/login" element={<Login />}></Route>
+          <Route path="/addCourse" element={<AddCourse />}></Route>
         </Routes>
       </Router>
       {/* <Router>

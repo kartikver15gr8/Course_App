@@ -27,6 +27,15 @@ function Navbar() {
         >
           login
         </Button>
+
+        <Button
+          variant="contained"
+          onClick={() => {
+            navigate("/addCourse");
+          }}
+        >
+          Add
+        </Button>
       </div>
     </nav>
   );
