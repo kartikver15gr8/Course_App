@@ -122,7 +122,7 @@ app.put("/admin/course/:id", authenticateJWT, (req, res) => {
 });
 
 app.get("/admin/course", authenticateJWT, (req, res) => {
-  res.status(200).json(COURSES);
+  res.json({ courses: COURSES });
 });
 
 app.get("/admin", authenticateJWT, (req, res) => {

@@ -3,10 +3,11 @@ import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import "./App.css";
-import Navbar from "./Navbar";
-import Signup from "./Signup";
-import Login from "./Login";
-import AddCourse from "./AddCourse";
+import Navbar from "./components/Navbar";
+import Signup from "./components/Signup";
+import Login from "./components/Login";
+import AddCourse from "./components/AddCourse";
+import GetCourse from "./components/GetCourse";
 
 function App() {
   return (
@@ -17,8 +18,10 @@ function App() {
           <Route path="/signup" element={<Signup />}></Route>
           <Route path="/login" element={<Login />}></Route>
           <Route path="/addCourse" element={<AddCourse />}></Route>
+          <Route path="/getCourse" element={<GetCourse />}></Route>
         </Routes>
       </Router>
+
       {/* <Router>
         <Navbar />
         <Routes>

@@ -1,6 +1,7 @@
 import Button from "@mui/material/Button";
 import { useNavigate } from "react-router-dom";
-import "./navbar.css";
+import "./style/navbar.css";
+
 function Navbar() {
   const navigate = useNavigate();
   return (
@@ -35,6 +36,14 @@ function Navbar() {
           }}
         >
           Add
+        </Button>
+        <Button
+          variant="contained"
+          onClick={() => {
+            navigate("/getCourse");
+          }}
+        >
+          Get
         </Button>
       </div>
     </nav>

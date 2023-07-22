@@ -1,17 +1,14 @@
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import { useState } from "react";
+import "./style/login.css";
 
-import "./signup.css";
-
-function Signup() {
+function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-
   return (
     <div className="container">
-      <h2>Signup Here!</h2>
-
+      <h2>Login Here!</h2>
       <TextField
         id="outlined-basic"
         label="username"
@@ -37,7 +34,7 @@ function Signup() {
       <Button
         variant="contained"
         onClick={() => {
-          fetch("http://localhost:3000/admin/signup", {
+          fetch("http://localhost:3000/admin/login", {
             method: "POST",
             body: JSON.stringify({ username, password }),
             headers: {
@@ -53,10 +50,10 @@ function Signup() {
             });
         }}
       >
-        Signup
+        login
       </Button>
     </div>
   );
 }
 
-export default Signup;
+export default Login;
