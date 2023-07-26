@@ -6,7 +6,13 @@ function Navbar() {
   const navigate = useNavigate();
   return (
     <nav className="navbar">
-      <h1>Coursera</h1>
+      <h1
+        onClick={() => {
+          navigate("/");
+        }}
+      >
+        Coursera
+      </h1>
       <div className="btn">
         {/* <Button variant="contained">Admin</Button>
         <Button variant="outlined">User</Button> */}

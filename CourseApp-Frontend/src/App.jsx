@@ -9,6 +9,7 @@ import Login from "./components/Login";
 import AddCourse from "./components/AddCourse";
 import GetCourse from "./components/GetCourse";
 import UpdateCourse from "./components/UpdateCourse";
+import Body from "./components/Body";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
+          <Route path="/" element={<Body />}></Route>
           <Route path="/signup" element={<Signup />}></Route>
           <Route path="/login" element={<Login />}></Route>
           <Route path="/addCourse" element={<AddCourse />}></Route>
